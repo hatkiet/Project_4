@@ -1,8 +1,8 @@
-# Project-4
+## Project-4
 
 # Machine Learning Obesity/Heart Disease/Brain/etc. Datasets
 
-# Project 4 Proposal: Obesity/Heart Disease/Brain Datasets
+## Project 4 Proposal: Obesity/Heart Disease/Brain Datasets
 
 ## Project Description: 
 
