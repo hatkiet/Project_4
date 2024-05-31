@@ -29,11 +29,8 @@ Use Obesity/Heart Disease/Brain, etc. Datasets to segment customers based on dem
 
 ### Group Members and proposed tasks each will do: 
 
-* **Fara Naghavi** -  look for datasets, ETL, perform machine learning algorithms once data is prepared, Pandas, data analysis, Tableau, presentation, data analysis, data engineering tableau dashboard/story
+* **All members** -  look for datasets, ETL, perform machine learning algorithms once data is prepared, Pandas, data analysis, Tableau, presentation, data analysis, data engineering tableau dashboard/story
 
-* **Harrison Lee** - look for datasets, ETL, perform machine learning algorithms once data is prepared  Pandas, data analysis, Tableau, presentation, data analysis, data engineering tableau dashboard/story
-
-* **Kiet Hoang**  - look for datasets, ETL, perform machine learning algorithms once data is prepared, Pandas, data analysis, Tableau, presentation, data analysis, data engineering tableau dashboard/story
 
 
 ## Data Engineering Steps: 
