@@ -1,9 +1,7 @@
 # Project Source:
 Dataset and APIs:
 1.	NYC Taxi & Limousine Commission (TLC) Trip Record Data:
-o	Source: Available on Kaggle and NYC Open Data portal.
-o	Links:
-	Kaggle NYC Taxi Trip Data (NYC Open Data - TLC Trip Record Data)
+https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 Project Questions:
 1.	Exploratory Data Analysis (EDA):
 o	What are the key features in the NYC Taxi Trip Data?
