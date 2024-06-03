@@ -1,60 +1,28 @@
-## Project-4
-
-# Machine Learning Obesity/Heart Disease/Brain/etc. Datasets
-
-## Project 4 Proposal: Obesity/Heart Disease/Brain Datasets
-
-## Project Description: 
-
-Use Obesity/Heart Disease/Brain, etc. Datasets to segment customers based on demographics and make  predictions. We will be forming clusters based on demographics information and using this to gather valuable insights and making prediction/forecasting... 
-
-### Technologies: python, machine learning, tableau, sql, pandas
-
-### Database: from Kaggle 
-
-### Question we are interested in: 
-
-[1]
-
-[2]
-
-[3]
-
-
-### Tasks: 
-
-[1] Data Emgineering: cleaning, merging datasets 
-[2] Machine Learning: Unsupervised learning, PCA 
-[3] Visualizations will be made with Tableau, having several dashboards and a story.
-
-### Group Members and proposed tasks each will do: 
-
-* **All members** -  look for datasets, ETL, perform machine learning algorithms once data is prepared, Pandas, data analysis, Tableau, presentation, data analysis, data engineering tableau dashboard/story
-
-
-
-## Data Engineering Steps: 
-
-1. Load the dataset / read csv
-2. Check the missing values / filter / clean
-3. Insight into the Dataset: Dataset describe
-4. Exploratory Data Analysis (EDA)
-5. Data Visualization / Plotting the data
-6. Export the output/dataframe 
-7. Data Processing -Finding the correlation among features
-8. Split data into features (X) and target variable (y)
-
-
-## Machine Learning: 
-
-1. Training Model
-2. Standard scaler module
-3. Kmeans algorithm for clusters
-4. PCA components for clusters
-5. Sub clusters
-6. PCA for sub clusters
-
-
-## Tableau:
-1. Visualizations of machine learning outcomes
-2. Presentation stories in Tableau
+# Project Source:
+Dataset and APIs:
+1.	NYC Taxi & Limousine Commission (TLC) Trip Record Data:
+o	Source: Available on Kaggle and NYC Open Data portal.
+o	Links:
+	Kaggle NYC Taxi Trip Data (NYC Open Data - TLC Trip Record Data)
+Project Questions:
+1.	Exploratory Data Analysis (EDA):
+o	What are the key features in the NYC Taxi Trip Data?
+o	How is the data distributed across different time periods (e.g., days of the week, months)?
+o	What are the trends or patterns in taxi trip volumes over time?
+o	Is there any correlation between taxi trip durations and other variables (e.g., distance, time of day)?
+2.	Interactive Visualizations:
+o	How can we visualize the geographical distribution of taxi pickups and drop-offs in NYC using Folium?
+o	Are there any specific areas or neighborhoods that exhibit high taxi demand?
+o	Can we visualize the temporal patterns of taxi trips throughout the day or week using interactive plots?
+3.	Machine Learning Models:
+o	How can we predict taxi demand for future time periods using machine learning?
+o	Which features are most important for predicting taxi demand?
+o	What machine learning algorithms are suitable for this prediction task (e.g., regression, time series forecasting, neural networks)?
+o	Can we optimize the prediction model to improve accuracy and performance?
+4.	User Interaction:
+o	How can we create drop-down menus or interactive widgets for users to explore the data and prediction results?
+o	What features or functionalities would enhance the user experience of the taxi trip analysis tool?
+5.	Advanced Techniques:
+o	How can we implement a neural network for predicting taxi demand?
+o	What are the advantages and challenges of using neural networks for this prediction task?
+o	Can we compare the performance of neural networks with traditional machine learning models?
