@@ -34,9 +34,9 @@ Use Obesity/Heart Disease Data to segment customers based on demographics and ma
 
 All members look for datasets, ETL, perform machine learning algorithms once data is prepared  Pandas, data analysis, Tableau, presentation, data analysis
 
-TECHNICAL STEPS:
+## TECHNICAL STEPS:
 
-## (i) Data Engineering Steps: 
+### (i) Data Engineering Steps: 
 
 1. Load the dataset / read csv
 2. Check the missing values / filter / clean
@@ -48,7 +48,7 @@ TECHNICAL STEPS:
 8. Split data into features (X) and target variable (y)
 
 
-## (ii) Machine Learning: 
+### (ii) Machine Learning: 
 
 1. Training Model
 2. Standard scaler module
@@ -58,6 +58,6 @@ TECHNICAL STEPS:
 6. PCA for sub clusters
 
 
-## (iii) Tableau or HTML Dropdown Menu:
+### (iii) Tableau or HTML Dropdown Menu:
 1. Visualizations of machine learning outcomes
 2. Presentation stories in Tableau/HTML
