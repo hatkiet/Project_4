@@ -32,13 +32,11 @@ Use Obesity/Heart Disease Data to segment customers based on demographics and ma
 
 ### Group Members and tasks each will do: 
 
-[1] Harrison Lee - look for datasets, ETL, perform machine learning algorithms once data is prepared  Pandas, data analysis, Tableau, presentation, data analysis
-[2] Kiet Hoang  - look for datasets, ETL, perform machine learning algorithms once data is prepared, Pandas, data analysis, Tableau, presentation, data analysis
-[3] ??? -  check ETL, and machine learning model, presentation, data analysis
-[4] ??? -  READme, data engineering, data engineering tableau dashboard/story
+All members look for datasets, ETL, perform machine learning algorithms once data is prepared  Pandas, data analysis, Tableau, presentation, data analysis
 
+TECHNICAL STEPS:
 
-## Data Engineering Steps: 
+## (i) Data Engineering Steps: 
 
 1. Load the dataset / read csv
 2. Check the missing values / filter / clean
@@ -50,7 +48,7 @@ Use Obesity/Heart Disease Data to segment customers based on demographics and ma
 8. Split data into features (X) and target variable (y)
 
 
-## Machine Learning: 
+## (ii) Machine Learning: 
 
 1. Training Model
 2. Standard scaler module
@@ -60,6 +58,6 @@ Use Obesity/Heart Disease Data to segment customers based on demographics and ma
 6. PCA for sub clusters
 
 
-## Tableau:
+## (iii) Tableau or HTML Dropdown Menu:
 1. Visualizations of machine learning outcomes
-2. Presentation stories in Tableau
+2. Presentation stories in Tableau/HTML
