@@ -1,34 +1,30 @@
-# Machine Learning Obesity/Heart Disease/Brain Datasets
+# Machine Learning: Heart Disease Datasets
 
-# Project 4 Proposal: Obesity/Heart Disease/Brain Datasets
+# Project 4 Proposal: Heart Disease
 
 ## Project Description: 
 
-Use Obesity/Heart Disease Data to segment customers based on demographics and make  predictions. We will be forming clusters based on demographics information and using this to gather valuable insights and making prediction/forecasting. 
+Using heart disease data to segment customers based on demographics and make predictions. We will form clusters based on demographic information and use this to gather valuable insights and make predictions/forecasts. 
 
-### Technologies: python, machine learning, tableau, sql, pandas
+### Technologies: python, machine learning, tableau, SQL, pandas
 
 ### Database: from Kaggle 
 
 ### Question we are interested in: 
 
-[1] What was the change in price of the stock overtime?
+[1] 
 
-[2] What was the average price (in 10 days, 20 days, 30 days) of the various stocks?
+[2]
 
-[3] What was the daily return of the stock on average?
+[3]
 
-[4] What was the correlation between different stocks closing prices? Correlation between the stocks' daily return values
-
-[5] How much value do we put at risk by investing in a particular stock?
-
-[6] Predicting the closing price stock price of an particular stock
+[4]
 
 ### Tasks: 
 
 [1] Data Emgineering: cleaning, merging datasets 
 [2] Machine Learning: Unsupervised learning, PCA 
-[3] Visualizations will be made with Tableau, having several dashboards and a story.
+[3] Visualizations will be made with Tableau/HTML, having several dashboards and a story.
 
 ### Group Members and tasks each will do: 
 
