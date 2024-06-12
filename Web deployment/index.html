@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Attack Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Heart Attack Project</h1>
+    <section>
+        <hr>
+        <h2><span>Why Heart Attack?</span></h2>
+        <p>Heart attacks are a leading cause of morbidity and mortality worldwide. 
+        Understanding the distribution and risk factors of heart attacks is crucial 
+        for improving public health outcomes. By analyzing data on heart attacks 
+        across different regions and demographics, we can identify patterns and 
+        potential areas for intervention. This webpage aims to provide insights 
+        into the prevalence of heart attacks in the USA and explore various factors
+        that may influence the likelihood of experiencing a heart attack.
+        <a target="_blank" href="https://www.heart.org/en/health-topics/heart-attack">Learn More!</a>
+        </p>
+        <!-- <div id="map" class="map-container"></div> -->
+        <iframe src="us_heart_attack_heatmap.html" width="100%" height="600px"></iframe>
+    </section>
+
+    <section>
+        <hr>
+        <h2><span>Factors That Affect the Likelihood of a Heart Attack in Our Dataset</span></h2>
+    </section>
+    
+    <!-- Start SEX -->
+    <section>
+        <div>
+            <img src="sex.png" alt="Factor 1" />
+            <h3><a href="#" onclick="showPlot('sexPlot')">SEX</a></h3>
+            <p>Sex differences can influence the risk of heart attacks</p>
+        </div>
+    </section>
+
+    <!-- Start General Health -->
+    <section>
+        <div>
+            <img src="general_health.png" alt="Factor 2" />
+            <h3><a href="#" onclick="showPlot('generalHealthPlot')">General Health</a></h3>
+            <p>General health status can impact the risk of heart attacks</p>
+        </div>
+    </section>
+
+    <!-- Start sleep -->
+    <section>
+        <div>
+            <img src="sleep.png" alt="Factor 3" />
+            <h3><a href="#" onclick="showPlot('sleepPlot')">Sleep</a></h3>
+            <p>Sleep hours can impact the risk of heart attacks</p>
+        </div>
+    </section>
+
+    <!-- Start Physical Activity -->
+    <section>
+        <div>
+            <img src="physical_activity.png" alt="Factor 4" />
+            <h3><a href="#" onclick="showPlot('physicalActivityPlot')">Physical Activity</a></h3>
+            <p>Physical activity levels are related to the risk of heart attacks</p>
+        </div>
+    </section>
+
+    <!-- Start Age -->
+    <section>
+        <div>
+            <img src="age.png" alt="Factor 5" />
+            <h3><a href="#" onclick="showPlot('agePlot')">Age</a></h3>
+            <p>Age is a significant factor in the risk of heart attacks</p>
+        </div>
+    </section>
+
+    <section>
+        <hr>
+        <h2><span>Reciprocal Relationships and Comorbidities</span></h2>
+        <p>Heart attacks often occur alongside other health conditions, which can mutually influence each other. 
+        This section focuses on identifying these comorbidities and understanding their reciprocal relationships with heart attacks in our dataset.</p>
+    </section> 
+
+    <!-- Start Diabetes -->
+    <section>
+        <div>
+            <img src="Path/to/image.jpg" alt="Comorbidity 1" />
+            <h3><a href="#" onclick="showPlot('diabetesPlot')">Diabetes</a></h3>
+            <p>Diabetes can impact the risk of heart attacks</p>
+        </div>
+    </section>
+
+    <section>
+        <hr>
+        <h2><span>Prediction Model</span></h2>
+        <p>Based on the dataset, we developed a model that can predict if you have had a heart attack after getting your information. 
+        Try it here!</p>
+    </section> 
+
+    <!-- Modal for interactive plots -->
+    <div id="plotModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePlot()">&times;</span>
+            <div id="sexPlot" class="plot"></div>
+            <div id="generalHealthPlot" class="plot"></div>
+            <div id="physicalActivityPlot" class="plot"></div>
+            <div id="agePlot" class="plot"></div>
+            <div id="sleepPlot" class="plot"></div>
+            <div id="diabetesPlot" class="plot"></div>
+        </div>
+    </div>
+
+    <!-- Include Leaflet JS library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <!-- Include Plotly for interactive plots -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Include your custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
