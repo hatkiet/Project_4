@@ -2,7 +2,7 @@
 
 ## Project Description: 
 
-Use Heart Attack Data to segment customers based on demographics and make predictions. We will be forming clusters based on demographics information and using this to gather valuable insights and making prediction/forecasting. 
+Use Heart Attack Dataset to segment customers based on demographics and make predictions. We will be forming clusters based on demographics information and using this to gather valuable insights and making prediction/forecasting. 
 
 ### Technologies: Spark, SQL, Python, Pandas, Matplotlib, Tensorflow, Supervised Machine Learning (Random Forests), Deep Learning (Neural Networks)
 
