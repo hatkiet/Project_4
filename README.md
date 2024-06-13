@@ -20,7 +20,7 @@ Use Heart Attack Dataset to segment customers based on demographics and make pre
 
 ### Group Members and tasks each will do: 
 
-All members look for datasets, ETL, visualization, and perform machine learning modeling. 
+All members look for datasets, query data, extract, transform and load (ETL) to Jupyter Notebook, and then perform visualization, and machine learning modeling. 
 
 
 ## TECHNICAL STEPS:
