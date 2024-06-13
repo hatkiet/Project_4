@@ -6,6 +6,7 @@
     <title>Heart Attack Project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <h1>Heart Attack Project</h1>
@@ -34,7 +35,7 @@
     <section>
         <div>
             <img src="sex.png" alt="Factor 1" />
-            <h3><a href="#" onclick="showPlot('sexPlot')">SEX</a></h3>
+            <h3><a href="#" onclick="showPlot('heartAttackChart')">SEX</a></h3>
             <p>Sex differences can influence the risk of heart attacks</p>
         </div>
     </section>
@@ -97,12 +98,12 @@
         <p>Based on the dataset, we developed a model that can predict if you have had a heart attack after getting your information. 
         Try it here!</p>
     </section> 
-
+ 
     <!-- Modal for interactive plots -->
     <div id="plotModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closePlot()">&times;</span>
-            <div id="sexPlot" class="plot"></div>
+            <div id="heartAttackChart" class="plot"></div>
             <div id="generalHealthPlot" class="plot"></div>
             <div id="physicalActivityPlot" class="plot"></div>
             <div id="agePlot" class="plot"></div>
@@ -114,7 +115,6 @@
     <!-- Include Leaflet JS library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
     <!-- Include Plotly for interactive plots -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- Include your custom JavaScript -->
     <script src="script.js"></script>
 </body>
