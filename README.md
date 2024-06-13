@@ -32,13 +32,13 @@ All members look for datasets, ETL, visualization, and perform machine learning 
 
 ### (i) Data Engineering Steps: 
 
-* Using SparkSQL to query data (in Colab)
+* Using SparkSQL to query data (in Colab) (_1_HeartAttack_SparkSQL.ipynb_)
 
 1. DownLoad the dataset from Kaggle / read csv
 2. Check the missing values / filter / clean
 3. Export to CSV (_heart_2022_Spark.csv_) for Visualization
 
-* Using Jupyter Notebook for Visualization
+* Using Jupyter Notebook for Visualization (_2_HeartAttack_Visualization.ipynb_)
 
 4. Insight into the Dataset: Dataset describe
 5. Exploratory Data Analysis (EDA): One-variable, Two-variable Analysis
@@ -51,8 +51,8 @@ All members look for datasets, ETL, visualization, and perform machine learning 
 
 1. Split data into features (X) and target variable (y)
 2. Training Model
-3. Supervised Learning - Random Forests 
-4. Deep Learning - Standard scaler module (Neural Network)
+3. Supervised Learning - Random Forests (_3.1_HeartAttack_ML_RandomForests.ipynb_)
+4. Deep Learning Neural Networks - Standard scaler module (_3.2_HeartAttack_ML_NeuralNetwork.ipynb_)
 
 
 
