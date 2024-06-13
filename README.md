@@ -15,7 +15,9 @@ Use Heart Attack Dataset to segment customers based on demographics and make pre
 ### Tasks: 
 
 [1] Data Engineering: querying, cleaning, merging datasets 
+
 [2] Machine Learning: Supervised learning and Deep Learning 
+
 [3] Visualizations will be made with HTML DropDown Menu and a story.
 
 ### Group Members and tasks each will do: 
