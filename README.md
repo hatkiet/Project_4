@@ -1,3 +1,5 @@
+## Project-4
+
 # Machine Learning Heart Disease
 
 # Project 4 Proposal: Heart Disease
@@ -6,7 +8,7 @@
 
 Use Heart Disease Data to segment customers based on demographics and make predictions. We will be forming clusters based on demographics information and using this to gather valuable insights and making prediction/forecasting. 
 
-### Technologies: python, machine learning, tableau, sql, pandas
+### Technologies: Spark, SQL, Python, Pandas, Matplotlib, Tensorflow, Supervised Machine Learning (Random Forests), Deep Learning (Neural Networks)
 
 ### Database: from Kaggle 
 
@@ -16,37 +18,42 @@ Use Heart Disease Data to segment customers based on demographics and make predi
 
 ### Tasks: 
 
-[1] Data Emgineering: cleaning, merging datasets 
-[2] Machine Learning: Unsupervised learning, PCA 
+[1] Data Engineering: querying, cleaning, merging datasets 
+[2] Machine Learning: Supervised learning and Deep Learning 
 [3] Visualizations will be made with HTML DropDown Menu and a story.
 
 ### Group Members and tasks each will do: 
 
-All members look for datasets, ETL, perform machine learning algorithms once data is prepared  Pandas, data analysis, Tableau, presentation, data analysis
+All members look for datasets, ETL, visualization, and perform machine learning modeling. 
+
 
 ## TECHNICAL STEPS:
 
+
 ### (i) Data Engineering Steps: 
 
-1. Load the dataset / read csv
-2. Check the missing values / filter / clean
-3. Insight into the Dataset: Dataset describe
-4. Exploratory Data Analysis (EDA)
-5. Data Visualization / Plotting the data
-6. Export the output/dataframe 
-7. Data Processing -Finding the correlation among features
+* Using SparkSQL to query data (in Colab) (_1_HeartAttack_SparkSQL.ipynb_)
 
+1. DownLoad the dataset from Kaggle / read csv
+2. Check the missing values / filter / clean
+3. Export to CSV (_heart_2022_Spark.csv_) for Visualization
+
+* Using Jupyter Notebook for Visualization (_2_HeartAttack_Visualization.ipynb_)
+
+4. Insight into the Dataset: Dataset describe
+5. Exploratory Data Analysis (EDA): One-variable, Two-variable Analysis
+6. Data Visualization / Plotting the data
+7. Data Processing: Encoding data variables, Calculate correlation matrix
+8. Export CSV (_heart_2022_cleaned.csv_) for Machine Learning
 
 
 ### (ii) Machine Learning: 
 
 1. Split data into features (X) and target variable (y)
 2. Training Model
-3. Standard scaler module (Neural Network Modeling)
-4. Kmeans algorithm for clusters
-5. PCA components for clusters
-6. Sub clusters
-7. PCA for sub clusters
+3. Supervised Learning - Random Forests (_3.1_HeartAttack_ML_RandomForests.ipynb_)
+4. Deep Learning Neural Networks - Standard scaler module (_3.2_HeartAttack_ML_NeuralNetwork.ipynb_)
+
 
 
 ### (iii) HTML Dropdown Menu:
