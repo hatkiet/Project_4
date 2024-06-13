@@ -1,8 +1,4 @@
-## Project-4
-
-# Machine Learning Heart Disease
-
-# Project 4 Proposal: Heart Disease
+# Project-4: Machine Learning Heart Attack
 
 ## Project Description: 
 
