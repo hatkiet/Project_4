@@ -1,60 +1,61 @@
 ## Project-4
 
-# Machine Learning Obesity/Heart Disease/Brain/etc. Datasets
+# Machine Learning Heart Disease
 
-## Project 4 Proposal: Obesity/Heart Disease/Brain Datasets
+# Project 4 Proposal: Heart Disease
 
 ## Project Description: 
 
-Use Obesity/Heart Disease/Brain, etc. Datasets to segment customers based on demographics and make  predictions. We will be forming clusters based on demographics information and using this to gather valuable insights and making prediction/forecasting... 
+Use Heart Disease Data to segment customers based on demographics and make predictions. We will be forming clusters based on demographics information and using this to gather valuable insights and making prediction/forecasting. 
 
-### Technologies: python, machine learning, tableau, sql, pandas
+### Technologies: Spark, SQL, Python, Pandas, Matplotlib, Tensorflow, Supervised Machine Learning (Random Forests), Deep Learning (Neural Networks)
 
 ### Database: from Kaggle 
 
 ### Question we are interested in: 
 
-[1]
-
-[2]
-
-[3]
-
+[1] 
 
 ### Tasks: 
 
-[1] Data Emgineering: cleaning, merging datasets 
-[2] Machine Learning: Unsupervised learning, PCA 
-[3] Visualizations will be made with Tableau, having several dashboards and a story.
+[1] Data Engineering: querying, cleaning, merging datasets 
+[2] Machine Learning: Supervised learning and Deep Learning 
+[3] Visualizations will be made with HTML DropDown Menu and a story.
 
-### Group Members and proposed tasks each will do: 
+### Group Members and tasks each will do: 
 
-* **All members** -  look for datasets, ETL, perform machine learning algorithms once data is prepared, Pandas, data analysis, Tableau, presentation, data analysis, data engineering tableau dashboard/story
+All members look for datasets, ETL, visualization, and perform machine learning modeling. 
 
 
+## TECHNICAL STEPS:
 
-## Data Engineering Steps: 
 
-1. Load the dataset / read csv
+### (i) Data Engineering Steps: 
+
+* Using SparkSQL to query data (in Colab)
+
+1. DownLoad the dataset from Kaggle / read csv
 2. Check the missing values / filter / clean
-3. Insight into the Dataset: Dataset describe
-4. Exploratory Data Analysis (EDA)
-5. Data Visualization / Plotting the data
-6. Export the output/dataframe 
-7. Data Processing -Finding the correlation among features
-8. Split data into features (X) and target variable (y)
+3. Export to CSV (_heart_2022_Spark.csv_) for Visualization
+
+* Using Jupyter Notebook for Visualization
+
+4. Insight into the Dataset: Dataset describe
+5. Exploratory Data Analysis (EDA): One-variable, Two-variable Analysis
+6. Data Visualization / Plotting the data
+7. Data Processing: Encoding data variables, Calculate correlation matrix
+8. Export CSV (_heart_2022_cleaned.csv_) for Machine Learning
 
 
-## Machine Learning: 
+### (ii) Machine Learning: 
 
-1. Training Model
-2. Standard scaler module
-3. Kmeans algorithm for clusters
-4. PCA components for clusters
-5. Sub clusters
-6. PCA for sub clusters
+1. Split data into features (X) and target variable (y)
+2. Training Model
+3. Supervised Learning - Random Forests 
+4. Deep Learning - Standard scaler module (Neural Network)
 
 
-## Tableau:
+
+### (iii) HTML Dropdown Menu:
 1. Visualizations of machine learning outcomes
-2. Presentation stories in Tableau
+2. Presentation stories in HTML
