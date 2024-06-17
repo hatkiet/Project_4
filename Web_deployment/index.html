@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Risk Dashboard</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- Leaflet JavaScript code-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- Leaflet heatmap plugin-->
+    <script type="text/javascript" src="static/js/leaflet-heat.js"></script>
+
+    <!-- leaflet-choropleth JavaScript -->
+    <script type="text/javascript" src="static/js/choropleth.js"></script>
+
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    
+    <script type="module" src="https://my-server/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Heart Disease Risk Dashboard</h1>
+        <div class="tabs">
+            <button class="tablink" onclick="openPage('Graphs', this)" id="defaultOpen">Graphs</button>
+            <button class="tablink" onclick="openPage('Map', this)">Map</button>
+            <button class="tablink" onclick="openPage('Prediction', this)">Prediction</button>
+        </div>
+
+        <div id="Graphs" class="tableauPlaceholder">
+            <h2>Graphs</h2>
+            <div class='tableauPlaceholder' id='viz1718585610172' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HA&#47;HA_trial_1&#47;HeartAttackDist_vs_StatewithAgina&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HA_trial_1&#47;HeartAttackDist_vs_StatewithAgina' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HA&#47;HA_trial_1&#47;HeartAttackDist_vs_StatewithAgina&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1718585610172');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+        </div>
+
+        <div id="Map" class="tabcontent">
+            <h2>Map</h2>
+            <div id="map" style="height: 500px;"></div>
+        </div>
+
+        <div id="Prediction" class="tabcontent">
+            <h2>Prediction</h2>
+            <form id="riskForm" class="grid-form">
+                <div class="form-group">
+                    <label for="state">State:</label>
+                    <input type="text" id="state" name="State" required>
+                </div>
+                <div class="form-group">
+                    <label for="sex">Sex:</label>
+                    <input type="text" id="sex" name="Sex" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="text" id="age" name="Age" required>
+                </div>
+                <div class="form-group">
+                    <label for="race">Race:</label>
+                    <input type="text" id="race" name="Race" required>
+                </div>
+                <div class="form-group">
+                    <label for="bmi">BMI:</label>
+                    <input type="number" id="bmi" name="BMI" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="genhealth">General Health:</label>
+                    <input type="text" id="genhealth" name="GenHealth" required>
+                </div>
+                <div class="form-group">
+                    <label for="physicalhealth">Physical Health:</label>
+                    <input type="number" id="physicalhealth" name="PhysicalHealth" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="mentalhealth">Mental Health:</label>
+                    <input type="number" id="mentalhealth" name="MentalHealth" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="physicalactivity">Physical Activity:</label>
+                    <input type="text" id="physicalactivity" name="PhysicalActivity" required>
+                </div>
+                <div class="form-group">
+                    <label for="chestscan">Chest Scan:</label>
+                    <input type="text" id="chestscan" name="ChestScan" required>
+                </div>
+                <div class="form-group">
+                    <label for="sleephours">Sleep Hours:</label>
+                    <input type="number" id="sleephours" name="SleepHours" step="0.1" required>
+                </div>
+                <div class="form-group">
+                    <label for="diffwalking">Difficulty Walking:</label>
+                    <input type="text" id="diffwalking" name="DiffWalking" required>
+                </div>
+                <div class="form-group">
+                    <label for="smoking">Smoking:</label>
+                    <input type="text" id="smoking" name="Smoking" required>
+                </div>
+                <div class="form-group">
+                    <label for="ecigaretteusage">E-Cigarette Usage:</label>
+                    <input type="text" id="ecigaretteusage" name="ECigaretteUsage" required>
+                </div>
+                <div class="form-group">
+                    <label for="drinking">Drinking:</label>
+                    <input type="text" id="drinking" name="Drinking" required>
+                </div>
+                <button type="submit">Predict</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
