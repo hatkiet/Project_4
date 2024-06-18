@@ -2,15 +2,15 @@
 
 ## Project Description: 
 
-Use Heart Attack Dataset to segment customers based on demographics and make predictions. We will be forming clusters based on demographics information and using this to gather valuable insights and making prediction/forecasting. 
+Use CDC 2022 BRFSS survey dataset to respondents group, analyze and evaluate for patterns. We will develop Machine Learning models based off demographic information, risk factors along with additonal health information, to best develop a prediction of heart attack risks for indviduals. A machine learning model that could predict an individual’s risk of heart attack would be highly beneficial as healthcare resources can be allocated more effectively and early prevention will significantly reduce healthcare costs.
 
-### Technologies: Spark, SQL, Python, Pandas, Matplotlib, Tensorflow, Supervised Machine Learning (Random Forests), Deep Learning (Neural Networks)
+For future implementations of this model, an individual can input their general health information, including Age, Physical Activity, Smoking, BMI, and more, and the model will determine whether the individual is at high or low risk of heart attack. If high risk, the platform will provide a list of next steps, including a medical consultation, lifestyle changes, regular monitoring of health indicators, and potential treatments. This will lead to behavioural changes and more informed patients.
 
-### Database: from Kaggle 
+### Technologies: Spark, SQL, Python, Pandas, Matplotlib, Logistic Regression, Tensorflow, Supervised Machine Learning (Random Forests), Deep Learning (Neural Networks), XGBoost, GradientBoosting, Adaptive Synthetic Sampling 
 
-### Question we are interested in: 
+### Dataset: 
+https://www.cdc.gov/brfss/annual_data/annual_2022.html
 
-[1] 
 
 ### Tasks: 
 
@@ -18,11 +18,11 @@ Use Heart Attack Dataset to segment customers based on demographics and make pre
 
 [2] Machine Learning: Supervised learning and Deep Learning 
 
-[3] Visualizations will be made with HTML DropDown Menu and a story.
+[3] Visualizations will be made with Tableau, Matplotlib, MissingNo, tensorflow, and Pandas. 
 
-### Group Members and tasks each will do: 
+### Group Members(Alphabetical): Fara Naghavi, Harrison Lee, Kiet Hoang, Mia Hursh
 
-All members look for datasets, query data, extract, transform and load (ETL) to Jupyter Notebook, and then perform visualization, and machine learning modeling. 
+All members contributed equally and preforming all tasks delegated. 
 
 
 ## TECHNICAL STEPS:
